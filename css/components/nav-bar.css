@@ -1,0 +1,35 @@
+.nav {
+  position: fixed; /*네비게이션 바가 항상 하단에 고정*/
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /*패딩때문에 맨 끝 아이콘이 사라져서 적용*/
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notification {
+  position: absolute; /*포지션 앱솔루트는 가장 가까운 relative 부모기준으로 움직여서 nav__link에 position:realtive 를적용해야함*/
+  left: 20px;
+  bottom: 15px;
+}
+
+.nav__dot {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  position: absolute;
+  left: 35px;
+  bottom: 30px;
+}

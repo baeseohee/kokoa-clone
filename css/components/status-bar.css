@@ -1,0 +1,33 @@
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px 0px; /*상태바 상단 좌우 여백*/
+  box-sizing: border-box; /*패딩때문에 맨 끝 아이콘이 사라져서 적용*/
+}
+
+.status-bar__column {
+  width: 33%;
+}
+
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-bar__column .fa-battery-full {
+  /*배터리 아이콘이랑 볼트 아이콘 사이 간격 조절*/
+  margin: 0px 5px;
+}

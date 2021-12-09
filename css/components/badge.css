@@ -1,0 +1,11 @@
+.badge {
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  border-radius: 14px;
+  display: flex; /* display 블록이 함꼐 있으면 적용이 안됨 그래서 플렉스만 넣기*/
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
