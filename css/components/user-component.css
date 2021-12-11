@@ -57,3 +57,7 @@
 .user-component {
   margin-bottom: 15px;
 }
+
+.user-component__subtitle i {
+  color: tomato;
+}
